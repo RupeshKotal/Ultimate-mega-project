@@ -134,7 +134,7 @@ spec:
     spec:
       containers:
       - name: bankapp
-        image: ruxs123/bankapp:v20
+        image: ruxs123/bankapp:v${BUILD_NUMBER}
         resources:
           requests:
             memory: "256Mi"
