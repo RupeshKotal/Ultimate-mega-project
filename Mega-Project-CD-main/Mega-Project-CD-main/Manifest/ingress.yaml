@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: www.shackverse.co
+    - host: www.rupesh.live
       http:
         paths:
           - path: /
