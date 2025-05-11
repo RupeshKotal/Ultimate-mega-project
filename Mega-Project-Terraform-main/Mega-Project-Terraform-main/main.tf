@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-1"
-  access-key= "AKIA3VO64NQEFR2SVSVG"
-  secret-key= "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"
+  access_key= "AKIA3VO64NQEFR2SVSVG"
+  secret_key= "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"
 }
 
 resource "aws_vpc" "bankapp_vpc" {
