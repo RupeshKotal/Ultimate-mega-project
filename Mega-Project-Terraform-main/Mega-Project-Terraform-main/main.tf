@@ -4,6 +4,7 @@ provider "aws" {
   secret_key= "VJTLxH+LDQUdXp5FFpTPeSGkwXOUbbZs95IkSlnm"
 }
 
+
 resource "aws_vpc" "bankapp_vpc" {
   cidr_block = "10.0.0.0/16"
 
