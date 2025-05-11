@@ -121,7 +121,7 @@ resource "aws_eks_node_group" "bankapp" {
     min_size     = 2
   }
 
-  instance_types = ["t2.small"]
+  instance_types = ["t2.medium"]
 
   remote_access {
     ec2_ssh_key = var.ssh_key_name
