@@ -4,6 +4,17 @@ provider "aws" {
   secret_key= "VJTLxH+LDQUdXp5FFpTPeSGkwXOUbbZs95IkSlnm"
 }
 
+terraform {
+  backend "s3" {
+    bucket         = "my-bankapp-terraform-state"     # replace with your S3 bucket name
+    key            = "eks/terraform.tfstate"           # state file path in bucket
+    region         = "us-east-1"                       # change if using a different region
+    dynamodb_table = "terraform-locks"                 # DynamoDB for state locking
+    encrypt        = true
+  }
+}
+
+
 
 resource "aws_vpc" "bankapp_vpc" {
   cidr_block = "10.0.0.0/16"
